@@ -1,0 +1,10 @@
+^D:\CODEFLUTTER\MYAPP1\BUILD\WINDOWS\X64\CMAKEFILES\8A7B8201FDCEBDC625C14D86DC121E18\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
